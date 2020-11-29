@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.simplenewsystem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".regsiter"
+            android:exported="true"
+            android:label="水产养殖远程监控系统注册界面">
+        </activity>
+
+        <activity android:name=".System"
+            android:exported="true"
+            android:label="模式选择">
+        </activity>
+
+        <activity android:name=".Auto"
+            android:exported="true"
+            android:label="自动控制模式"
+            >
+        </activity>
+
+        <activity android:name=".Manual"
+            android:exported="true"
+            android:label="手动控制模式">
+        </activity>
+
+        <activity android:name=".JianCe"
+            android:exported="true"
+            android:label="实时位置参数监测"
+            >
+        </activity>
+
+        <activity android:name=".PathShow"
+            android:exported="true"
+            android:label="实时路径跟踪"
+            >
+        </activity>
+
+        <activity android:name=".HalfAuto"
+            android:exported="true"
+            android:label="半自动控制模式"
+            >
+        </activity>
+
+        <activity android:name=".ManualDrawMap"
+            android:exported="true"
+            android:label="手动绘制地图"
+            >
+        </activity>
+
+        <activity android:name=".TurnToAnother"
+            android:exported="true"
+            android:label="转塘"
+            >
+        </activity>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3vFyWlovxNUfNw6t34EQGQoCZUTG4bZU"/>
+    </application>
+
+
+
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 读取外置存储。如果开发者使用了so动态加载功能并且把so文件放在了外置存储区域，则需要申请该权限，否则不需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

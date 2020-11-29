@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/shishilujing"
+    android:padding="15dp"
+    android:background="@drawable/newbackg"
+    >
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/jueduiweidu"
+        android:text="绝对位置:"
+        android:textColor="#FFFAFA"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/jueduiweidu"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_above="@+id/relativeLayout"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:background="@drawable/parcel"
+        android:gravity="center_horizontal"
+        android:text="32.19778132"
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/jueduijingdu"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/jueduiweidu"
+        android:layout_alignBottom="@+id/jueduiweidu"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imageView6"
+        android:layout_toStartOf="@+id/imageView6"
+        android:background="@drawable/parcel"
+        android:gravity="center_horizontal"
+        android:text="119.51708343"
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="10dp"
+        android:text="电子地图相对位置:"
+        android:textColor="#FFFAFA"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/textView13"
+        android:layout_toRightOf="@+id/textView13"
+        android:background="@drawable/parcel"
+        android:gravity="center_horizontal"
+        android:text="206"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:id="@+id/textView14" />
+
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignEnd="@+id/jueduijingdu"
+        android:layout_alignRight="@+id/jueduijingdu"
+        android:background="@drawable/parcel"
+
+
+        android:gravity="center_horizontal"
+        android:text="248"
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:id="@+id/place"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/bg4" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="30dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/zhinan" />
+
+
+
+
+
+
+</RelativeLayout>

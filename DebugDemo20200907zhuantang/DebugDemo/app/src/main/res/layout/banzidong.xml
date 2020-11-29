@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/banzidong"
+    android:padding="15dp"
+    android:background="@drawable/newbackg"
+    >
+
+    <Button
+        android:id="@+id/JumpManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/buttonbg2"
+        android:text="   手动模式   "
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/JumpAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/buttonbg2"
+        android:text="   自动模式   "
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginLeft="260dp"
+        android:background="@drawable/buttonbg2"
+        android:text="   停止   "
+        android:textSize="20dp" />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paopan"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="60dp"
+        android:text="抛盘电机转动速度"
+        android:textSize="20dp"
+        android:textColor="#FFFAFA"
+        />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/paopan"
+        android:layout_toRightOf="@+id/paopan"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zhendong"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="90dp"
+        android:text="振动电机振动速度"
+        android:textSize="20dp"
+        android:textColor="#FFFAFA"
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/zhendong"
+        android:layout_toRightOf="@+id/zhendong"
+
+        />
+    <!--
+       <ImageView
+           android:id="@+id/ditu"
+           android:layout_width="397dp"
+           android:layout_height="516dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="170dp"
+           android:layout_marginBottom="34dp"
+           android:src="@drawable/ditu" />
+   -->
+       <!-- 使用百度地图的提供的MapView -->
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/spinner2"
+        android:layout_marginTop="40dp"
+        android:clickable="true"/>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

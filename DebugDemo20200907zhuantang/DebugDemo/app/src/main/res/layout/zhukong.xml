@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/zhukong"
+    android:padding="15dp"
+    android:background="@drawable/newbackg"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Connect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:src="@drawable/schoollogo1"
+        android:id="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/buttonbg2"
+        android:text="   连  接   "
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/serverlive"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView18"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/stoplight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Connect"
+        android:layout_alignBottom="@+id/Connect"
+        android:layout_toRightOf="@+id/Connect"
+        android:layout_toEndOf="@+id/Connect"
+        android:layout_marginLeft="20dp"
+        android:text="服务器连接状态:"
+        android:textColor="#EEE9E9"
+        android:textSize="20dp"
+        android:id="@+id/textView18" />
+
+
+    <TextView
+        android:id="@+id/DTU"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/Connect"
+        android:layout_alignStart="@+id/Connect"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/parcel"
+        android:gravity="center_horizontal"
+        android:hint="船DTU"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DTU"
+        android:layout_alignStart="@+id/Connect"
+        android:layout_alignLeft="@+id/Connect"
+        android:layout_marginTop="-150dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/parcel"
+        android:gravity="center_horizontal"
+        android:hint="Phone"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--zidong-->
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="88dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/Connect"
+        android:layout_toRightOf="@+id/Connect"
+        android:background="@drawable/auto" />
+
+    <!--shoudong-->
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/imageButton"
+        android:layout_toRightOf="@+id/imageButton"
+        android:background="@drawable/hand" />
+
+    <!--bamzidong-->
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:background="@drawable/halfauto" />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="11dp"
+        android:layout_toLeftOf="@+id/imageButton2"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:text="自动"
+        android:textColor="#FFFAFA"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignEnd="@+id/imageButton2"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="手动"
+        android:textColor="#FFFAFA"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignEnd="@+id/imageButton3"
+        android:layout_alignRight="@+id/imageButton3"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="半自动"
+        android:textColor="#FFFAFA"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="注：未登陆服务器时，请勿进行其他操作！"
+        android:id="@+id/warnning"
+        android:textColor="#EEE9E9" />
+
+
+</RelativeLayout>

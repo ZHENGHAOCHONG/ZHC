@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/systemlayout"
+    android:padding="15dp"
+    android:background="@drawable/appbackgroundfinal"
+    >
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:text="连接"
+        android:textSize="20dp"
+        android:background="@drawable/buttonbg"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iprev"
+        android:hint="   输入服务器地址"
+        android:layout_toRightOf="@id/start"
+        android:layout_alignBottom="@id/start"
+        />
+
+
+    <TextView
+        android:id="@+id/auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/iprev"
+        android:layout_marginTop="11dp"
+        android:gravity="center_horizontal"
+        android:text="自动"
+        android:textSize="20dp" />
+
+
+    <Switch
+        android:id="@+id/autoswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/auto"
+        android:layout_alignBottom="@id/auto"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remote"
+        android:text="遥控"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/autoswitch"
+        android:layout_alignBottom="@id/auto"
+        />
+
+    <Switch
+        android:id="@+id/remoteswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/remote"
+        android:layout_alignBottom="@id/auto"
+        />
+
+    <SeekBar
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekpaof"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:paddingRight="12dp"
+        android:paddingTop="3dp"
+        android:max="100"
+        android:progress="50"
+        android:thumb="@drawable/seekcircle"
+        android:layout_marginTop="115dp"
+        android:progressDrawable="@drawable/seekprogress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paofpwm"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/seekpaof"
+        android:text="抛盘转速:0"
+        android:textSize="16dp"
+        android:textColor="#16BC5C"
+
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:layout_marginTop="135dp"
+        android:id="@+id/control_layout">
+
+        <Button
+            android:id="@+id/center"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            />
+
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_above="@id/center"
+            android:layout_centerHorizontal="true"
+            android:text="前进"
+            android:background="@drawable/buttonbg2"/>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/center"
+            android:layout_centerHorizontal="true"
+            android:text="后退"
+            android:background="@drawable/buttonbg2"
+            />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:id="@+id/left"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/center"
+            android:text="左转"
+            android:background="@drawable/buttonbg2"
+            />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/center"
+            android:text="右转"
+            android:background="@drawable/buttonbg2"/>
+
+        <TextView
+            android:id="@+id/txtrev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back" />
+    </RelativeLayout>
+    <SeekBar
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekspeed"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:paddingRight="12dp"
+        android:paddingTop="3dp"
+        android:max="100"
+        android:progress="50"
+        android:thumb="@drawable/seekcircle"
+        android:layout_below="@id/control_layout"
+        android:progressDrawable="@drawable/seekprogress"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/speedpwm"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/control_layout"
+        android:text="明轮电机转速:0"
+        android:textSize="16dp"
+        android:textColor="#16BC5C"
+
+        />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/monitor_layout"
+        android:layout_marginTop="315dp"
+        >
+        <!--纬         度-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/latText"
+            android:text="纬         度:"
+            android:textSize="20dp"
+            android:layout_marginTop="7dp"
+            />
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:id="@+id/latrev"
+            android:background="@drawable/parcel"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/latText"
+            android:layout_alignBottom="@+id/latText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="。"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/latrev"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"/>
+
+        <!--经         度-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lngText"
+            android:text="经         度:"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/latrev"
+            />
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:id="@+id/lngrev"
+            android:gravity="center_horizontal"
+            android:background="@drawable/parcel"
+            android:layout_toRightOf="@+id/lngText"
+            android:layout_alignBottom="@+id/lngText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="。"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/lngrev"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <!--剩余电量-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Etric"
+            android:text="剩余电量:"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/lngrev"
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:id="@+id/Etricrev"
+            android:gravity="center_horizontal"
+            android:background="@drawable/parcel"
+            android:layout_toRightOf="@+id/Etric"
+            android:layout_alignBottom="@+id/Etric"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/Etricrev"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@id/Etricrev"/>
+
+        <!--速度-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Speed"
+            android:text="速度:"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/lngrev"
+            android:layout_marginLeft="170dp"
+            />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:id="@+id/Speedrev"
+            android:background="@drawable/parcel"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/Speed"
+            android:layout_alignBottom="@+id/Speed"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm/s"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/Speedrev"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@id/Speedrev"/>
+
+        <!--剩余饵料-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Erl"
+            android:text="剩余饵料:"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/Etric"
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:id="@+id/Erlrev"
+            android:background="@drawable/parcel"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/Erl"
+            android:layout_alignBottom="@+id/Erl"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/Erlrev"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@id/Erlrev"/>
+
+        <!--抛幅-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Paof"
+            android:text="抛幅:"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/Etric"
+            android:layout_marginLeft="170dp"
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:id="@+id/Paofrev"
+            android:background="@drawable/parcel"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/Paof"
+            android:layout_alignBottom="@+id/Erl"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/Paofrev"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@id/Erlrev"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/line2"
+            android:background="@drawable/underline"
+            android:layout_marginTop="135dp"/>
+
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pathplan"
+            android:text="开始轨迹规划"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/buttonbg3"
+            />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/showmapbn"
+            android:text="查看电子地图"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/buttonbg3"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

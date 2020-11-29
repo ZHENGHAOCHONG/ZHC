@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 使用百度地图的提供的MapView -->
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/spinner2"
+        android:layout_marginBottom="80dp"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/btnAddPoint"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/buttonbg2"
+        android:text="添加障碍点"
+        android:textSize="10sp" />
+    <!--<Button
+        android:id="@+id/btnAddPoint"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/buttonbg2"
+        android:text="添加障碍点"
+        android:textSize="10sp" />-->
+
+    <Button
+        android:id="@+id/btnAddLine"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/buttonbg2"
+        android:text="手绘路线"
+        android:textSize="10sp" />
+   <!-- <Button
+        android:id="@+id/btnAddLine"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:background="@drawable/buttonbg2"
+        android:text="手绘路线"
+        android:textSize="10sp" />-->
+
+    <Button
+        android:id="@+id/btnSendPoint"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:background="@drawable/buttonbg2"
+        android:text="发送地图"
+        android:textSize="10sp" />
+    <!--<Button
+        android:id="@+id/btnSendPoint"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/buttonbg2"
+        android:text="发送地图"
+        android:textSize="10sp" />-->
+<!--
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginLeft="225dp"
+        android:background="@drawable/buttonbg2"
+        android:text="刷新"
+        android:textSize="10sp" />-->
+
+    <Button
+        android:id="@+id/btnDeleteData"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginLeft="270dp"
+        android:background="@drawable/buttonbg2"
+        android:text="清除数据"
+        android:textSize="10sp" />
+    <!--<Button
+        android:id="@+id/btnDeleteData"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:background="@drawable/buttonbg2"
+        android:text="清除数据"
+        android:textSize="10sp" />-->
+
+
+
+
+</RelativeLayout>
